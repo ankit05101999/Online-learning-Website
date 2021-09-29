@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Online Study Website Design Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="index.html"><img src="mainlogo.png" alt="e-learning logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="fullstack.html">FULL STACK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- -----------------Contact Us page content-------------- -->
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>BBIT College, Boy's Hostel</h5>
+                        <p>Kolkata, West Bengal</p>
+                    </span>
+                </div>
+            </div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+91 7321890558, 6291073066</h5>
+            </span>
+            <i class="fas fa-envelope"></i>
+            <span>
+                <h5>ankit05101999@gmail.com</h5>
+                <p>Email us your query</p>
+            </span>
+            <div class="contact-col"></div>
+        </div>
+    </section>
+
+    <!-- -------------footer------------->
+
+    <section class="footer">
+        <H4>About Us</H4>
+        <p> A form of distance education in which a course or program is intentionally designed in advance to be
+            delivered fully online.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/rehanankitsingh"></a>
+            <i class="fa fa-facebook"></i>
+
+            <a href="https://www.instagram.com/ankitsingh0510/"></a>
+            <i class="fa fa-instagram"></i>
+
+            <a href="https://www.linkedin.com/in/ankit-kumar-660b29212/"></a>
+            <i class="fa fa-linkedin"></i>
+
+            <a href="https://github.com/ankit05101999"></a>
+            <i class="fa fa-github"></i>
+        </div>
+        <p>Made by RAVAN KI LANKA</p>
+    </section>
+
+
+
+
+
+
+
+
+    <!--------------- javaScript for Toggle Menu ---------------------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
